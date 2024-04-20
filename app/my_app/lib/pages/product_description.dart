@@ -248,7 +248,7 @@ class _ProductDescriptionState extends State<ProductDescription> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 2),
+                  padding: const EdgeInsets.symmetric(horizontal: 2),
                   child: Card(
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
@@ -265,7 +265,7 @@ class _ProductDescriptionState extends State<ProductDescription> {
                               Text(
                                 user.address.isEmpty ? "" : user.address[1],
                                 style:
-                                    TextStyle(fontSize: 20, color: Colors.blue),
+                                    const TextStyle(fontSize: 20, color: Colors.blue),
                               ),
                               Expanded(child: Container()),
                               GestureDetector(
@@ -275,7 +275,7 @@ class _ProductDescriptionState extends State<ProductDescription> {
                                 },
                                 child: Container(
                                   padding: const EdgeInsets.all(5),
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                       borderRadius:
                                           BorderRadius.all(Radius.circular(10)),
                                       border: Border.fromBorderSide(
@@ -289,7 +289,7 @@ class _ProductDescriptionState extends State<ProductDescription> {
                               )
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 10,
                           ),
                           Text(
@@ -307,14 +307,14 @@ class _ProductDescriptionState extends State<ProductDescription> {
                   padding: const EdgeInsets.symmetric(horizontal: 2.0),
                   child: Card(
                     child: Container(
-                      padding: EdgeInsets.symmetric(horizontal: 5, vertical: 8),
+                      padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 8),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
                             width: MediaQuery.of(context).size.width * 0.4,
-                            child: Column(
-                              children: const [
+                            child: const Column(
+                              children: [
                                 CircleAvatar(
                                     backgroundColor: Colors.yellow,
                                     child: Icon(Icons.restart_alt)),
@@ -327,8 +327,8 @@ class _ProductDescriptionState extends State<ProductDescription> {
                           ),
                           Container(
                             width: MediaQuery.of(context).size.width * 0.4,
-                            child: Column(
-                              children: const [
+                            child: const Column(
+                              children: [
                                 CircleAvatar(
                                     backgroundColor: Colors.green,
                                     child: Icon(Icons.currency_rupee_outlined)),
@@ -434,7 +434,7 @@ class _ProductDescriptionState extends State<ProductDescription> {
                         },
                         itemCount: 3,
                         itemBuilder: (context, index) {
-                          return ProductCardItemWidget();
+                          return const ProductCardItemWidget();
                         }))
               ],
             ),
@@ -479,10 +479,10 @@ class _ProductDescriptionState extends State<ProductDescription> {
                     colors: [Colors.black, Colors.black45],
                   ),
                   borderRadius: BorderRadius.all(Radius.circular(15))),
-              child: Center(
+              child: const Center(
                 child: Text(
                   "Add to Cart",
-                  style: const TextStyle(
+                  style: TextStyle(
                       color: Colors.white,
                       fontSize: 22,
                       fontWeight: FontWeight.w600),
