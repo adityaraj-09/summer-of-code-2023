@@ -86,7 +86,7 @@ class _FirstPageState extends State<FirstPage> {
     return Scaffold(
       appBar: AppBar(
         flexibleSpace: Padding(
-          padding: const EdgeInsets.only(top: 35.0),
+          padding: const EdgeInsets.only(top: 10.0),
           child: Row(
             children: [
               GestureDetector(

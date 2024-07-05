@@ -38,7 +38,7 @@ class _ProfilePageState extends State<ProfilePage> {
           },
           child: Padding(
             padding: const EdgeInsets.only(
-              top: 28.0,
+              top: 10.0,
             ),
             child: ListTile(
               leading: CircleAvatar(

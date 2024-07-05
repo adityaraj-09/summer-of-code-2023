@@ -19,7 +19,7 @@ class _ProfileImageState extends State<ProfileImage> {
       appBar:  AppBar(
         automaticallyImplyLeading: false,
         flexibleSpace:Padding(
-          padding: const EdgeInsets.only(top: 35.0,left: 10,right: 10),
+          padding: const EdgeInsets.only(top: 10.0,left: 10,right: 10),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
