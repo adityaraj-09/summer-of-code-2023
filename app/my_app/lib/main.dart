@@ -38,6 +38,7 @@ void main() async{
 }
 
 class MyApp extends StatefulWidget {
+
   const MyApp({Key? key}) : super(key: key);
 
 
@@ -46,6 +47,7 @@ class MyApp extends StatefulWidget {
 }
 class _MyAppState extends State<MyApp> {
   final ApiService apiService=ApiService();
+  final FirebaseAuth auth = FirebaseAuth.instance;
 
   @override
   void initState() {
@@ -61,7 +63,7 @@ class _MyAppState extends State<MyApp> {
         primarySwatch: Colors.grey,
       ),
       debugShowCheckedModeBanner: false,
-      home: TestPage(),
+      home: auth.currentUser == null?AuthPage():HomePage(),
     );
   }
 
