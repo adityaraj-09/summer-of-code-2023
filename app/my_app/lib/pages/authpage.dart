@@ -93,7 +93,7 @@ class _AuthPageState extends State<AuthPage> {
                     height: 500,
                     padding: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
-                        
+                        color: const Color(0xff2E4237).withOpacity(0.1),
                         borderRadius: const BorderRadius.all(Radius.circular(15))),
                     width: 350,
                     child: Column(
