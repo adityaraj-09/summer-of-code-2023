@@ -9,6 +9,7 @@ import 'package:my_app/pages/authpage.dart';
 import 'package:my_app/pages/searchPage.dart';
 import 'package:my_app/providers/product_provider.dart';
 import 'package:my_app/providers/userProvider.dart';
+import 'package:my_app/test.dart';
 import 'package:provider/provider.dart';
 const firebaseConfig = FirebaseOptions(
   apiKey: "AIzaSyASQowKZs9_psum_VnQyERBEl0FNpML_jA",
@@ -60,7 +61,7 @@ class _MyAppState extends State<MyApp> {
         primarySwatch: Colors.grey,
       ),
       debugShowCheckedModeBanner: false,
-      home: FirebaseAuth.instance.currentUser==null?const AuthPage():const HomePage(),
+      home: TestPage(),
     );
   }
 

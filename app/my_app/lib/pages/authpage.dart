@@ -69,7 +69,7 @@ class _AuthPageState extends State<AuthPage> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xff2E4237),
       body: isloading?Center(child: CircularProgressIndicator(color: Theme.of(context).primaryColor,),): SafeArea(
         child: SingleChildScrollView(
           child: Column(
